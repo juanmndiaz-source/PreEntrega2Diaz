@@ -169,7 +169,7 @@ main .texto {
     padding: 1rem 2rem 5rem 2rem;
 }
 
-.juegos-populares h1{
+.juegos-populares h2{
     margin-top: 2rem;
 }
 
@@ -368,32 +368,32 @@ footer{
     max-width: 1100px;
     margin: 0 auto;
 }
-.footer-col {
+.footer-columna {
     width: 300px;
 }
-.footer-col h3 {
+.footer-columna h3 {
     color: #ffffff;
     font-size: 1.1rem;
     margin-bottom: 1rem;
 }
-.footer-col p {
+.footer-columna p {
     font-size: 0.9rem;
     line-height: 1.6;
 }
-.footer-col ul {
+.footer-columna ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.footer-col ul li {
+.footer-columna ul li {
     margin-bottom: 0.5rem;
 }
-.footer-col ul li a {
+.footer-columna ul li a {
     color: #b8b8b8;
     text-decoration: none;
     transition: color 0.2s ease;
 }
-.footer-col ul li a:hover {
+.footer-columna ul li a:hover {
     color: #9333EA;
 }
 
@@ -455,7 +455,7 @@ footer{
         justify-content: center;
     }
 
-    .footer-col {
+    .footer-columna {
         width: 45%;
         text-align: center;
     }
@@ -491,7 +491,7 @@ footer{
         justify-content: center;
     }
 
-    .footer-col {
+    .footer-columna {
         width: 90%;
         text-align: center;
     }
