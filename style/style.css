@@ -1,0 +1,498 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+body{
+    background-color: #252530;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+}
+
+/* NAVBAR - BOOTSTRAP */
+.glass-navbar {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.6rem 1.5rem;
+}
+
+/* NAVBAR - LOGO */
+.glass-navbar .logo {
+    height: 60px;
+}
+
+/* NAVBAR - HOVER EN LOS ITEMS DEL MENU HAMBURGUESA */
+.icon-btn:hover ion-icon {
+    color: #a855f7; /* violeta */
+}
+
+/* NAVBAR - ENLACES DEL NAVBAR */
+.glass-navbar .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0 0.4rem;
+}
+.glass-navbar .nav-link:hover {
+    color: #a855f7;
+}
+
+/* NAVBAR - SACAR BORDE DEL ICONO */
+.navbar-dark .navbar-toggler {
+    border: none;
+}
+
+/* NAVBAR - ICONOS - HOME, TIENDA, CONTACTO, AYUDA */
+header ion-icon {
+    font-size: 1.1rem;
+    vertical-align: middle;
+    color: #ffffff;
+    margin-right: 0.5rem;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* H1 CARRUSEL */
+main h1{
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+/* PARRAFO CARRUSEL */
+main p{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #b8b8b8;
+}
+
+/* CONTENEDOR CARRUSEL */
+main .carrusel {
+    background: linear-gradient(to right, #0f172a, #2c3a4e);
+    padding: 4rem;
+    width: 100%;
+    margin: auto;
+}
+
+/* BOTON DEL CARRUSEL */
+main .boton-uno {
+    display: inline-block;
+    background-color: #9333EA;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    border: none;
+    cursor: pointer;
+}
+main .boton-uno a {
+    text-decoration: none;
+    color: #ffffff;
+    vertical-align: middle;
+}
+main .boton-uno:hover {
+    background-color: #7e22ce;
+}
+
+/* ICONO DE EXPLORAR TIENDA */
+main ion-icon {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* CONTENEDOR IMAGENES */
+main .img {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #1D222E;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem;
+    border: 1px solid #4d4d79;
+}
+
+/* CADA CONTENEDOR INDIVIDUAL DE IMAGEN*/
+main .imagen {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* IMAGENES */
+main .imagen img {
+    width: 320px;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    border: 2px solid #514b57;
+}
+
+/* HOVER DEL BORDE DE LAS IMAGENES */
+main .imagen:hover img{
+    border: 3px solid #a855f7;
+}
+
+/* TEXTO DENTRO DE LAS IMAGENES DE JUEGOS */
+main .texto {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: rgba(15, 23, 42, 0.8);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
+
+/* JUEGOS POPULARES */
+.juegos-populares{
+    background-color: #1A1A24;
+    width: 100%;
+    padding: 1rem 2rem 5rem 2rem;
+}
+
+.juegos-populares h1{
+    margin-top: 2rem;
+}
+
+.juegos-populares p{
+    margin-top: auto;
+}
+
+/* TRUSTPILOT - CONTENEDOR*/
+.trustpilot {
+    text-align: center;
+    margin-top: 1rem;
+    background-color: #252530;
+}
+.trustpilot p {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+.trustpilot-logo {
+    background-color: #1A1A24;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+/* BOOTSTRAP >> SECTION >> ACORDEON */
+.acordion{
+    width: 100%;
+    margin: 4rem auto;
+    padding: 1rem;
+    background-color: #1A1A24;
+}
+
+/* ACORDION - PARRAFO */
+.acordion p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+/* ACORDION - CADA SLOT DE PREGUNTA */
+.accordion-item {
+    border: none;
+    margin: 0 auto 2rem;
+    max-width: 800px;
+}
+
+/* ACORDION - TEXTO Y FONDO DE SLOT DE PREGUNTA  */
+.accordion-button, .accordion-body {
+    background-color: #2A2A36;
+    color: #ffffff;
+}
+.accordion-button {
+    font-size: 18px;
+    font-weight: 600;
+}
+.accordion-body {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+/* BANNER - GAME STORE - CENTRO DE ASISTENCIA - CENTRO DE AYUDA */
+.titulo_pagina {
+    background: linear-gradient(to right, #581C87, #1B1A25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: 200px;
+    width: 100%;
+    color: #ffffff;
+    padding: 0 2rem;
+}
+
+/* BANNER - CORRER MAS AL MEDIO */
+.titulo_pagina .contenido{
+    max-width: 800px;
+    margin-left: 6rem;
+}
+/* BANNER - ESTILO H1 */
+.titulo_pagina h1 {
+    font-weight: 600;
+    margin-bottom: auto;
+}
+/* BANNER - ESTILO PARRAFO */
+.titulo_pagina p {
+    margin-top: auto;
+    max-width: 800px;
+    color: #cccccc;
+    margin-bottom: 5rem;
+}
+
+/* CONTACTO - TARJETAS DE ASISTENCIA */
+.soporte-tarjetas {
+    background-color: #1A1A24;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: left;
+    display: inline-block;
+    width: 300px;
+}
+.soporte-tarjetas h2 {
+    font-size: 20px;
+    padding: 1rem 0 .5rem 1rem;
+}
+.soporte-tarjetas p {
+    font-size: 16px;
+    color: #b8b8b8;
+    margin: .5rem 0 .5rem 0;
+    padding: 0 0 .5rem 1rem;
+}
+
+/* CONTACTO - BOTON - (CHAT, EMAIL, DISCORD) */
+section .btn {
+    background-color: #9333EA;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto 1rem auto;
+    width: 90%;
+    display: block;
+}
+
+/* CONTACTO - ICONO */
+.soporte-icono ion-icon{
+    font-size: 1.5rem;
+    background-color: #7e22ce;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0 0 .5rem 1rem;
+}
+
+/* MAPA */
+.mapa {
+    background-color: #1A1A24;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+    width: 51%;
+}
+.mapa h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.mapa iframe {
+    border: 2px solid #514b57;
+    border-radius: 10px;
+}
+
+/* CENTRO DE AYUDA - FAQ */
+.centro-ayuda{
+    text-align: center;
+    background-color: #252530;
+    display: flex;
+    flex-direction: column;
+}
+.centro-ayuda .faq{
+    background-color: #1A1A24;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.centro-ayuda h2{
+    padding: 2rem;
+}
+.centro-ayuda h3{
+    margin-bottom: .5rem;
+    text-align: left;
+}
+.centro-ayuda p{
+    text-align: left;
+}
+
+/* FOOTER */
+footer{
+    justify-content: center;
+    padding: 1rem;
+    border-top: 1px solid #444C5E;
+    margin-top: auto;
+    display: flex;
+}
+
+/* CONTENEDOR DE COLUMNAS */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.footer-col {
+    width: 300px;
+}
+.footer-col h3 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.footer-col p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-col ul li {
+    margin-bottom: 0.5rem;
+}
+.footer-col ul li a {
+    color: #b8b8b8;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.footer-col ul li a:hover {
+    color: #9333EA;
+}
+
+/* PARTE INFERIOR */
+.footer-abajo{
+    border-top: 1px solid #222;
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* MEDIA QUERYS */
+
+/* TABLET */
+@media (max-width: 1024px) {
+
+    /* H1 y párrafos del main */
+    main h1 {
+        font-size: 2.3rem;
+        margin-top: 3rem;
+    }
+
+    main p {
+        font-size: 1rem;
+        margin: 1rem 2rem;
+    }
+
+    /* Carrusel */
+    main .carrusel {
+        padding: 2rem;
+    }
+
+    /* Imágenes */
+    main .imagen img {
+        width: 260px;
+    }
+
+    /* Banner (titulo_pagina) */
+    .titulo_pagina {
+        height: 180px;
+        padding: 0 1.5rem;
+    }
+
+    .titulo_pagina .contenido {
+        margin-left: 2rem;
+    }
+
+    /* Mapa */
+    .mapa {
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    /* Footer */
+    .footer-container {
+        gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .footer-col {
+        width: 45%;
+        text-align: center;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+
+    /* NAVBAR */
+    .glass-navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .glass-navbar .logo {
+        height: 45px;
+    }
+
+    /* MAIN */
+    main h1 {
+        font-size: 1.8rem;
+        margin-top: 2rem;
+    }
+
+    /* Mapa */
+    .mapa iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* Footer */
+    .footer-container {
+        gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .footer-col {
+        width: 90%;
+        text-align: center;
+    }
+}
