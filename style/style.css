@@ -162,6 +162,7 @@ main .texto {
     border-radius: 5px;
 }
 
+
 /* JUEGOS POPULARES */
 .juegos-populares{
     background-color: #1A1A24;
@@ -176,6 +177,7 @@ main .texto {
 .juegos-populares p{
     margin-top: auto;
 }
+
 
 /* TRUSTPILOT - CONTENEDOR*/
 .trustpilot {
@@ -197,6 +199,7 @@ main .texto {
     border-radius: 10px;
     margin-bottom: 2rem;
 }
+
 
 /* BOOTSTRAP >> SECTION >> ACORDEON */
 .acordion{
@@ -237,6 +240,7 @@ main .texto {
     padding: 1rem;
 }
 
+
 /* BANNER - GAME STORE - CENTRO DE ASISTENCIA - CENTRO DE AYUDA */
 .titulo_pagina {
     background: linear-gradient(to right, #581C87, #1B1A25);
@@ -267,6 +271,7 @@ main .texto {
     color: #cccccc;
     margin-bottom: 5rem;
 }
+
 
 /* CONTACTO - TARJETAS DE ASISTENCIA */
 .soporte-tarjetas {
@@ -309,6 +314,7 @@ section .btn {
     margin: 0 0 .5rem 1rem;
 }
 
+
 /* MAPA */
 .mapa {
     background-color: #1A1A24;
@@ -326,6 +332,53 @@ section .btn {
     border: 2px solid #514b57;
     border-radius: 10px;
 }
+
+
+/* GRID - BENEFICIOS */
+.beneficios{
+    display: grid;
+    background-color: #1A1A24;
+    color: white;
+    padding: 2rem;
+    text-align: left;
+    width: 100%;
+    justify-items: center;
+}
+
+/* GRID - ¿Por qué elegirnos? */
+.beneficios h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+/* GRID - CONTENEDOR */
+.beneficios-contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 80%;
+}
+
+/* GRID - ESTILO_COLUMNAS  */
+.beneficios-columnas{
+    border: 1px solid #9333EA;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* GRID - H3 */
+.beneficios h3{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* GRID - PARRAFO */
+.beneficios p{
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
 
 /* CENTRO DE AYUDA - FAQ */
 .centro-ayuda{
@@ -350,6 +403,7 @@ section .btn {
     text-align: left;
 }
 
+
 /* FOOTER */
 footer{
     justify-content: center;
@@ -359,7 +413,7 @@ footer{
     display: flex;
 }
 
-/* CONTENEDOR DE COLUMNAS */
+/* FOOTER - CONTENEDOR DE COLUMNAS */
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -397,7 +451,7 @@ footer{
     color: #9333EA;
 }
 
-/* PARTE INFERIOR */
+/* FOOTER - PARTE INFERIOR */
 .footer-abajo{
     border-top: 1px solid #222;
     text-align: center;
@@ -407,8 +461,8 @@ footer{
     color: #777;
 }
 
-/* MEDIA QUERYS */
 
+/* MEDIA QUERYS */
 /* TABLET */
 @media (max-width: 1024px) {
 
@@ -459,6 +513,9 @@ footer{
         width: 45%;
         text-align: center;
     }
+    .beneficios-contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* CELULAR */
@@ -494,5 +551,8 @@ footer{
     .footer-columna {
         width: 90%;
         text-align: center;
+    }
+    .beneficios-contenedor {
+    grid-template-columns: 1fr; /* ✅ una sola columna */
     }
 }
