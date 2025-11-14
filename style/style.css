@@ -27,7 +27,7 @@ body{
 
 /* NAVBAR - HOVER EN LOS ITEMS DEL MENU HAMBURGUESA */
 .icon-btn:hover ion-icon {
-    color: #a855f7; /* violeta */
+    color: #a855f7;
 }
 
 /* NAVBAR - ENLACES DEL NAVBAR */
@@ -553,6 +553,6 @@ footer{
         text-align: center;
     }
     .beneficios-contenedor {
-    grid-template-columns: 1fr; /* ✅ una sola columna */
+    grid-template-columns: 1fr; 
     }
 }
